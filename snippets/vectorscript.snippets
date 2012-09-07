@@ -1,0 +1,24 @@
+snippet main
+	PROCEDURE Main;
+	BEGIN
+		${1}
+	END;
+	Run(Main);
+snippet proc
+	PROCEDURE ${1};
+	BEGIN
+		${2}
+	END;
+snippet func
+	FUNCTION ${1} : ${2};
+	BEGIN
+		${3}
+	END;
+snippet beg
+	BEGIN
+		${1}
+	END;
+snippet inc
+	{$INCLUDE ${1}}
+snippet debug
+	{$DEBUG}
