@@ -4,8 +4,9 @@ endif
 
 syn keyword vsKeywords PROCEDURE FUNCTION BEGIN END
 syn keyword vsKeywords CONST VAR STRUCTURE CASE FOR WHILE DO OF TYPE
+syn keyword vsKeywords ALLOCATE
 syn keyword vsKeywords IF THEN ELSE
-syn keyword vsType BOOLEAN STRING HANDLE REAL LONGINT POINT INTEGER ARRAY
+syn keyword vsType BOOLEAN STRING HANDLE REAL LONGINT POINT INTEGER ARRAY VECTOR DYNARRAY
 syn keyword vsBooleans TRUE FALSE
 syn keyword vsCompilerDirective contained $INCLUDE $DEBUG
 
