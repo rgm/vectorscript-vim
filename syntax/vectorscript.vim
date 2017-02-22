@@ -2416,9 +2416,10 @@ syn keyword vsBuiltinFunction vstSetPDMenuSel
 syn keyword vsBuiltinFunction vstSetPtBehavior
 syn keyword vsBuiltinFunction vstSetRsrcFile
 syn keyword vsBuiltinFunction vstSetWPHybridTool
-syn match vsGlobal '\<g\w\+'
+syn match vsGlobal '\<g[A-Z_][A-Za-z0-9_]\+'
+syn match vsGlobal '\<m[A-Z_][A-Za-z0-9_]\+'
 syn match vsConstant '\<k\w\+'
-syn match vsParameter '\<p[A-Z_][A-Za-z_]\+'
+syn match vsParameter '\<p[A-Z_][A-Za-z0-9_]\+'
 syn region vsString start="'" end="'"
 syn region vsComment start="{" end="}" contains=vsCompilerDirective
 
@@ -2427,9 +2428,10 @@ let b:current_syntax = "vectorscript"
 hi def link vsKeywords Statement
 hi def link vsType Type
 hi def link vsBuiltinFunction Function
-hi def link vsConstant Constant
+" hi def link vsConstant Constant
+hi def link vsConstant Underlined
 hi def link vsBooleans Statement
-"hi def link vsGlobal Identifier
+hi def link vsGlobal Identifier
 hi def link vsParameter Constant
 hi def link vsString String
 hi def link vsComment Comment
