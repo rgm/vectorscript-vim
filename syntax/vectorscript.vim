@@ -2428,8 +2428,8 @@ let b:current_syntax = "vectorscript"
 hi def link vsKeywords Statement
 hi def link vsType Type
 hi def link vsBuiltinFunction Function
-" hi def link vsConstant Constant
-hi def link vsConstant Underlined
+hi def link vsConstant Constant
+" hi def link vsConstant Underlined
 hi def link vsBooleans Statement
 hi def link vsGlobal Identifier
 hi def link vsParameter Constant
